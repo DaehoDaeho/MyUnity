@@ -4,7 +4,7 @@ using TMPro;
 public class CoinScore : MonoBehaviour
 {
     public TMP_Text scoreText;
-    public GameObject winPanel;
+    //public GameObject winPanel;
     public int totalCoins = 10;
     int score = 0;
 
@@ -15,10 +15,10 @@ public class CoinScore : MonoBehaviour
             scoreText.text = $"Score: {score}/{totalCoins}";
         }
 
-        if (winPanel != null)
-        {
-            winPanel.SetActive(false);
-        }
+        //if (winPanel != null)
+        //{
+        //    winPanel.SetActive(false);
+        //}
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,10 +33,10 @@ public class CoinScore : MonoBehaviour
                 scoreText.text = $"Score: {score}/{totalCoins}";
             }
 
-            if (score >= totalCoins && winPanel != null)
-            {
-                winPanel.SetActive(true);
-            }
+            //if (score >= totalCoins && winPanel != null)
+            //{
+            //    winPanel.SetActive(true);
+            //}
         }
     }
 }

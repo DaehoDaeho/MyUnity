@@ -4,7 +4,8 @@ using UnityEngine;
 public class Move2D : MonoBehaviour
 {
     public float accel = 30f;
-    Rigidbody2D rb; float ax;
+    Rigidbody2D rb;
+    float ax;
 
     void Awake()
     {
