@@ -6,6 +6,8 @@ public class PlayerShip : MonoBehaviour
     public float moveSpeed = 5f;
     public float screenMargin = 0.2f;
 
+    public Animator animator;
+    
     private Camera cam;
     private Vector2 minWorld;
     private Vector2 maxWorld;
@@ -54,5 +56,7 @@ public class PlayerShip : MonoBehaviour
         }
 
         transform.position = p;
+
+        animator.SetFloat("direction", x);
     }
 }
